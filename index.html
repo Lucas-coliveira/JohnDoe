@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2ef7ec1eb1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/folha.css">
+    <title>TFL</title>
+</head>
+
+<body>
+    <!--Pagina Inicial-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="imagens/logo.png" class="logos">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="fechamenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="abremenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Olá, meu nome é <span>Jonh Doe</span></h1>
+            </div>
+        </div>
+    </div>
+    <!--Sobre-->
+    <div id="sobre">
+        <div class="container">
+            <div class="linha">
+                <div class="sobre-col-1">
+                    <img src="imagens/sobre.png">
+                </div>
+                <div class="sobre-col-2">
+                    <h1 class="sub-titulo">Sobre</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus rerum architecto laudantium
+                        tenetur
+                        itaque vitae quidem nesciunt, optio adipisci quam voluptatem nisi distinctio quisquam molestiae
+                        dolores rem hic, voluptatibus dolore.</p>
+                    <div class="tab-titulo">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experiencia')">Experiencia</p>
+                        <p class="tab-links" onclick="opentab('formacao')">Formação</p>
+                    </div>
+                    <div class="tab-conteudos active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desenvolvimentos de interface Web/App</li>
+                            <li><span>Web Development</span><br>Desenvolvimentos de Sites e Apps</li>
+                            <li><span>App Development</span><br>Desenvolvimentos App para Android e iOS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-conteudos" id="Experiencia">
+                        <ul>
+                            <li><span>2021 - Até hoje</span><br>Professor honorário no MIT</li>
+                            <li><span>2011 - 2021</span><br>CIO na IBM</li>
+                            <li><span>2004 - 2011</span><br>Desenvolvedor na Google Inc.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-conteudos" id="formacao">
+                        <ul>
+                            <li><span>2010</span><br>MBA no MIT</li>
+                            <li><span>2005</span><br>Graduação Unicamp</li>
+                            <li><span>2003</span><br>Senac Botucatu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--serviços-->
+    <div id="servicos">
+        <div class="container">
+            <h1 class="sub-titulo">Serviços</h1>
+            <div class="lista_servicos">
+                <div>
+                    <i class="fa-brands fa-codepen"></i>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae iusto ad corporis iste
+                        repudiandae culpa officiis vel aut hic illum eveniet rerum, quidem nihil ducimus, distinctio
+                        quas? Libero, excepturi hic!</p>
+                    <a href="#">Saiba mais</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, odio aliquam, perferendis, neque
+                        quos quibusdam similique cumque illo laboriosam libero aliquid modi rem adipisci. Amet doloribus
+                        nostrum quod soluta debitis!</p>
+                    <a href="#">Saiba mais</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolor consequuntur voluptatem
+                        blanditiis corporis, non eum iure perferendis explicabo aliquid cumque expedita doloribus
+                        quisquam officia animi. Amet voluptatibus totam itaque.</p>
+                    <a href="#">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titulo">Meus trabalhos</h1>
+            <div class="lista_trabalho">
+                <div class="trabalho">
+                    <img src="imagens/dedo.jpg">
+                    <div class="camada">
+                        <h3>Prompt AI</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="trabalho">
+                    <img src="imagens/pessoa1.jpg">
+                    <div class="camada">
+                        <h3>Prompt AI</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="trabalho">
+                    <img src="imagens/pessoa2.jpg">
+                    <div class="camada">
+                        <h3>Prompt AI</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Saiba Mais</a>
+        </div>
+    </div>
+    <!--Contato-->
+    <div id="contato">
+        <div class="container">
+            <div class="linha">
+                <div class="esq-contato">
+                    <h1 class="sub-titulo">Contato</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> contato@tfl.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i> +55 59 3698-7418</p>
+                    <div class="redes_sociais">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="curriculo/curriculo 01_16 (2).docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="dir-contato">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Nome" placeholder="Digite seu nome" required>
+                        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                        <textarea name="mensagem" rows="6" placeholder="Deixe sua mensagem"></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"><!--simbolo copyright alt+0169-->
+            <p>copyright © 2023, Orgulhosamente feito com <i class="fa-solid fa-heart"></i> na terra do Saci.</p>
+        </div>
+    </div>
+    <script>
+        var abaLinks = document.getElementsByClassName("tab-links");
+        var abaConteudos = document.getElementsByClassName("tab-conteudos");
+        function opentab(abaNome) {
+            for (abaLink of abaLinks) {
+                abaLink.classList.remove("active-link");
+            }
+            for (abaConteudo of abaConteudos) {
+                abaConteudo.classList.remove("active-tab");
+            }
+            // Adiciona a classe active-link ao link da aba que foi clicada e torna visível o conteudo.
+            event.currentTarget.classList.add("active-link");
+            // Pega o conteudo da aba que corresponde ao nome retornado na função abaNome, depois adiciona a classe active-tab e torna o conteudo visivel.
+            document.getElementById(abaNome).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyrXvAYWoEBcv6YQNxA5hQwBQqLqlb3IZN51FEvjgb5-UXuVFf4ibsMRPzYx6XWLlbF9A/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Mensagem enviada com sucesso"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    },1000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function abremenu(){
+            sidemenu.style.right = "0";
+        }
+        function fechamenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>
